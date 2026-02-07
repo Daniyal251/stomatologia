@@ -24,20 +24,20 @@
       <li><a href="doctors.html">Врачи</a></li>
       <li><a href="reviews.html">Отзывы</a></li>
       <li><a href="contacts.html">Контакты</a></li>
-      <li><a href="https://wa.me/77715249535" class="btn-primary" target="_blank">Записаться</a></li>
+      <li><a href="#" class="btn-primary" onclick="openBooking(); return false;">Записаться</a></li>
     </ul>
     <button class="hamburger" aria-label="Меню" onclick="toggleMenu()"><span></span><span></span><span></span></button>
   </nav>
 </header>
 <div class="mobile-menu" id="mobileMenu">
   <a href="index.html">Главная</a><a href="services.html">Услуги</a><a href="about.html">О клинике</a><a href="doctors.html">Врачи</a><a href="reviews.html">Отзывы</a><a href="contacts.html">Контакты</a>
-  <a href="https://wa.me/77715249535" class="btn-primary" target="_blank">Записаться</a>
+  <a href="#" class="btn-primary" onclick="openBooking(); return false;">Записаться</a>
 </div>
 
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">Главная</a> <span>/</span> Услуги</div>
+    <div class="breadcrumb"><a href="index.html">Главная</a> <span>/</span> <span data-i18n="sp-bread">Услуги</span></div>
     <div class="section-label">Наши услуги</div>
     <h1 class="section-title">Полный спектр<br>стоматологических услуг</h1>
     <p class="section-subtitle">От профилактики до сложных хирургических вмешательств — всё в одной клинике для всей семьи. Современные методики и материалы мирового уровня.</p>
@@ -66,7 +66,7 @@
           <div class="service-feature"><div class="service-feature-dot"></div>Реставрация зубов фотополимерами</div>
           <div class="service-feature"><div class="service-feature-dot"></div>Лечение под микроскопом</div>
         </div>
-        <a href="https://wa.me/77715249535" class="btn-primary" target="_blank">Записаться</a>
+        <a href="#" class="btn-primary" onclick="openBooking(); return false;">Записаться</a>
       </div>
     </div>
 
@@ -88,7 +88,7 @@
           <div class="service-feature"><div class="service-feature-dot"></div>Фторирование и укрепление эмали</div>
           <div class="service-feature"><div class="service-feature-dot"></div>Адаптация ребёнка к лечению</div>
         </div>
-        <a href="https://wa.me/77715249535" class="btn-primary" target="_blank">Записаться</a>
+        <a href="#" class="btn-primary" onclick="openBooking(); return false;">Записаться</a>
       </div>
     </div>
 
@@ -110,7 +110,7 @@
           <div class="service-feature"><div class="service-feature-dot"></div>Импланты Straumann, Osstem, Dentium</div>
           <div class="service-feature"><div class="service-feature-dot"></div>Гарантия на имплантацию</div>
         </div>
-        <a href="https://wa.me/77715249535" class="btn-primary" target="_blank">Записаться</a>
+        <a href="#" class="btn-primary" onclick="openBooking(); return false;">Записаться</a>
       </div>
     </div>
 
@@ -132,7 +132,7 @@
           <div class="service-feature"><div class="service-feature-dot"></div>Детская ортодонтия (пластинки, трейнеры)</div>
           <div class="service-feature"><div class="service-feature-dot"></div>3D-планирование результата</div>
         </div>
-        <a href="https://wa.me/77715249535" class="btn-primary" target="_blank">Записаться</a>
+        <a href="#" class="btn-primary" onclick="openBooking(); return false;">Записаться</a>
       </div>
     </div>
 
@@ -154,7 +154,7 @@
           <div class="service-feature"><div class="service-feature-dot"></div>Профессиональное отбеливание</div>
           <div class="service-feature"><div class="service-feature-dot"></div>Фторирование и реминерализация</div>
         </div>
-        <a href="https://wa.me/77715249535" class="btn-primary" target="_blank">Записаться</a>
+        <a href="#" class="btn-primary" onclick="openBooking(); return false;">Записаться</a>
       </div>
     </div>
 
@@ -176,7 +176,7 @@
           <div class="service-feature"><div class="service-feature-dot"></div>Мостовидные протезы</div>
           <div class="service-feature"><div class="service-feature-dot"></div>Съёмное протезирование</div>
         </div>
-        <a href="https://wa.me/77715249535" class="btn-primary" target="_blank">Записаться</a>
+        <a href="#" class="btn-primary" onclick="openBooking(); return false;">Записаться</a>
       </div>
     </div>
 
@@ -200,7 +200,7 @@
       <div class="payment-cta reveal">
         <h3>Запишитесь на бесплатную консультацию</h3>
         <p>Приходите на осмотр и получите персональный план лечения. Без скрытых платежей.</p>
-        <a href="https://wa.me/77715249535" class="btn-primary" target="_blank">Записаться через WhatsApp</a>
+        <a href="#" class="btn-primary" onclick="openBooking(); toggleMenu(); return false;">Записаться</a>
       </div>
     </div>
   </div>
@@ -219,15 +219,6 @@
   </div>
 </footer>
 
-<script>
-const header = document.getElementById('header');
-window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 20); });
-function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
-const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => { if (entry.isIntersecting) { setTimeout(() => entry.target.classList.add('visible'), i * 80); observer.unobserve(entry.target); } });
-}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-reveals.forEach(el => observer.observe(el));
-</script>
+<script src="js/app.js"></script>
 </body>
 </html>
