@@ -15,16 +15,16 @@
     <a href="index.html" class="logo"><svg class="logo-icon" viewBox="0 0 44 44" fill="none"><path d="M22 4C14 4 8 12 8 22c0 8 6 16 14 18 8-2 14-10 14-18C36 12 30 4 22 4z" stroke="#c5a265" stroke-width="2.5" fill="none"/><path d="M6 14c6 4 14 6 22 6s16-2 22-6" stroke="#1a3a5c" stroke-width="2" fill="none" transform="translate(-6,-2) scale(0.85)"/><path d="M4 22c8 6 18 8 28 6" stroke="#1a3a5c" stroke-width="1.8" fill="none" transform="translate(-4,2) scale(0.85)"/></svg><span class="logo-text">MEGA <span>DENT</span></span></a>
     <ul class="nav-links">
       <li><a href="index.html">Главная</a></li><li><a href="services.html">Услуги</a></li><li><a href="about.html" class="active">О клинике</a></li><li><a href="doctors.html">Врачи</a></li><li><a href="reviews.html">Отзывы</a></li><li><a href="contacts.html">Контакты</a></li>
-      <li><a href="https://wa.me/77715249535" class="btn-primary" target="_blank">Записаться</a></li>
+      <li><a href="#" class="btn-primary" onclick="openBooking(); return false;">Записаться</a></li>
     </ul>
     <button class="hamburger" aria-label="Меню" onclick="toggleMenu()"><span></span><span></span><span></span></button>
   </nav>
 </header>
-<div class="mobile-menu" id="mobileMenu"><a href="index.html">Главная</a><a href="services.html">Услуги</a><a href="about.html">О клинике</a><a href="doctors.html">Врачи</a><a href="reviews.html">Отзывы</a><a href="contacts.html">Контакты</a><a href="https://wa.me/77715249535" class="btn-primary" target="_blank">Записаться</a></div>
+<div class="mobile-menu" id="mobileMenu"><a href="index.html">Главная</a><a href="services.html">Услуги</a><a href="about.html">О клинике</a><a href="doctors.html">Врачи</a><a href="reviews.html">Отзывы</a><a href="contacts.html">Контакты</a><a href="#" class="btn-primary" onclick="openBooking(); return false;">Записаться</a></div>
 
 <section class="page-hero">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">Главная</a> <span>/</span> О клинике</div>
+    <div class="breadcrumb"><a href="index.html">Главная</a> <span>/</span> <span data-i18n="ab-bread">О клинике</span></div>
     <div class="section-label">О нас</div>
     <h1 class="section-title">Клиника, которой<br>доверяют семьи</h1>
     <p class="section-subtitle">Mega Dent — это место, где качественная стоматология сочетается с заботой о каждом пациенте. Мы работаем с 2017 года и помогли более 12 000 пациентов обрести здоровую улыбку.</p>
@@ -141,7 +141,7 @@
   <div class="container">
     <h2>Станьте частью<br>нашей семьи пациентов</h2>
     <p>Приходите на бесплатную консультацию и убедитесь в нашем подходе сами.</p>
-    <a href="https://wa.me/77715249535" class="btn-white" target="_blank">Записаться через WhatsApp</a>
+    <a href="#" class="btn-white" onclick="openBooking(); return false;">Записаться через WhatsApp</a>
   </div>
 </section>
 
@@ -157,13 +157,6 @@
   </div>
 </footer>
 
-<script>
-const header = document.getElementById('header');
-window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 20); });
-function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
-const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => { entries.forEach((entry, i) => { if (entry.isIntersecting) { setTimeout(() => entry.target.classList.add('visible'), i * 80); observer.unobserve(entry.target); } }); }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-reveals.forEach(el => observer.observe(el));
-</script>
+<script src="js/app.js"></script>
 </body>
 </html>
