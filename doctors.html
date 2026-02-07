@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Наши врачи — Mega Dent | Стоматология в Алматы</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="header">
+  <nav>
+    <a href="index.html" class="logo"><svg class="logo-icon" viewBox="0 0 44 44" fill="none"><path d="M22 4C14 4 8 12 8 22c0 8 6 16 14 18 8-2 14-10 14-18C36 12 30 4 22 4z" stroke="#c5a265" stroke-width="2.5" fill="none"/><path d="M6 14c6 4 14 6 22 6s16-2 22-6" stroke="#1a3a5c" stroke-width="2" fill="none" transform="translate(-6,-2) scale(0.85)"/><path d="M4 22c8 6 18 8 28 6" stroke="#1a3a5c" stroke-width="1.8" fill="none" transform="translate(-4,2) scale(0.85)"/></svg><span class="logo-text">MEGA <span>DENT</span></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Главная</a></li><li><a href="services.html">Услуги</a></li><li><a href="about.html">О клинике</a></li><li><a href="doctors.html" class="active">Врачи</a></li><li><a href="reviews.html">Отзывы</a></li><li><a href="contacts.html">Контакты</a></li>
+      <li><a href="https://wa.me/77715249535" class="btn-primary" target="_blank">Записаться</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Меню" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+<div class="mobile-menu" id="mobileMenu"><a href="index.html">Главная</a><a href="services.html">Услуги</a><a href="about.html">О клинике</a><a href="doctors.html">Врачи</a><a href="reviews.html">Отзывы</a><a href="contacts.html">Контакты</a><a href="https://wa.me/77715249535" class="btn-primary" target="_blank">Записаться</a></div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Главная</a> <span>/</span> Врачи</div>
+    <div class="section-label">Наша команда</div>
+    <h1 class="section-title">Врачи, которым<br>вы можете доверять</h1>
+    <p class="section-subtitle">8 опытных специалистов, которые постоянно повышают квалификацию и владеют современными методиками лечения.</p>
+  </div>
+</section>
+
+<!-- DOCTORS -->
+<section class="doctors-section" style="padding-top: 80px;">
+  <div class="container">
+    <div class="doctors-grid" style="grid-template-columns: repeat(4, 1fr); gap: 28px;">
+
+      <div class="doctor-card reveal">
+        <div class="doctor-photo"><svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 3c-2 0-4 2-4 5s2 5 4 5 4-2 4-5-2-5-4-5z"/><path d="M5 21c0-4 3-7 7-7s7 3 7 7"/></svg></div>
+        <div class="doctor-info">
+          <div class="doctor-name">Маммадова Г.М.</div>
+          <div class="doctor-role">Стоматолог-терапевт</div>
+          <div class="doctor-bio">Специалист по эндодонтическому лечению. Работает с дентальным микроскопом.</div>
+          <div class="doctor-exp">Опыт работы более 12 лет</div>
+        </div>
+      </div>
+
+      <div class="doctor-card reveal">
+        <div class="doctor-photo"><svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 3c-2 0-4 2-4 5s2 5 4 5 4-2 4-5-2-5-4-5z"/><path d="M5 21c0-4 3-7 7-7s7 3 7 7"/></svg></div>
+        <div class="doctor-info">
+          <div class="doctor-name">Юнусов А.Р.</div>
+          <div class="doctor-role">Детский стоматолог</div>
+          <div class="doctor-bio">Мастер адаптации маленьких пациентов. Лечение без слёз и страха.</div>
+          <div class="doctor-exp">Опыт работы более 8 лет</div>
+        </div>
+      </div>
+
+      <div class="doctor-card reveal">
+        <div class="doctor-photo"><svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 3c-2 0-4 2-4 5s2 5 4 5 4-2 4-5-2-5-4-5z"/><path d="M5 21c0-4 3-7 7-7s7 3 7 7"/></svg></div>
+        <div class="doctor-info">
+          <div class="doctor-name">Толен М.Б.</div>
+          <div class="doctor-role">Хирург-имплантолог</div>
+          <div class="doctor-bio">Проводит имплантацию любой сложности. Обучался в Южной Корее.</div>
+          <div class="doctor-exp">Опыт работы более 10 лет</div>
+        </div>
+      </div>
+
+      <div class="doctor-card reveal">
+        <div class="doctor-photo"><svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 3c-2 0-4 2-4 5s2 5 4 5 4-2 4-5-2-5-4-5z"/><path d="M5 21c0-4 3-7 7-7s7 3 7 7"/></svg></div>
+        <div class="doctor-info">
+          <div class="doctor-name">Аяган Н.С.</div>
+          <div class="doctor-role">Стоматолог-терапевт</div>
+          <div class="doctor-bio">Эксперт по эстетической реставрации и лечению кариеса.</div>
+          <div class="doctor-exp">Опыт работы более 7 лет</div>
+        </div>
+      </div>
+
+      <div class="doctor-card reveal">
+        <div class="doctor-photo"><svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 3c-2 0-4 2-4 5s2 5 4 5 4-2 4-5-2-5-4-5z"/><path d="M5 21c0-4 3-7 7-7s7 3 7 7"/></svg></div>
+        <div class="doctor-info">
+          <div class="doctor-name">Ешмуханбетов Д.К.</div>
+          <div class="doctor-role">Стоматолог-ортопед</div>
+          <div class="doctor-bio">Специалист по протезированию: коронки, виниры, мостовидные конструкции.</div>
+          <div class="doctor-exp">Опыт работы более 9 лет</div>
+        </div>
+      </div>
+
+      <div class="doctor-card reveal">
+        <div class="doctor-photo"><svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 3c-2 0-4 2-4 5s2 5 4 5 4-2 4-5-2-5-4-5z"/><path d="M5 21c0-4 3-7 7-7s7 3 7 7"/></svg></div>
+        <div class="doctor-info">
+          <div class="doctor-name">Сейфуллин Е.А.</div>
+          <div class="doctor-role">Стоматолог-хирург</div>
+          <div class="doctor-bio">Удаление зубов любой сложности, хирургическая пародонтология.</div>
+          <div class="doctor-exp">Опыт работы более 11 лет</div>
+        </div>
+      </div>
+
+      <div class="doctor-card reveal">
+        <div class="doctor-photo"><svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 3c-2 0-4 2-4 5s2 5 4 5 4-2 4-5-2-5-4-5z"/><path d="M5 21c0-4 3-7 7-7s7 3 7 7"/></svg></div>
+        <div class="doctor-info">
+          <div class="doctor-name">Малгаждар А.Т.</div>
+          <div class="doctor-role">Стоматолог-гигиенист</div>
+          <div class="doctor-bio">Профессиональная гигиена, отбеливание, профилактика заболеваний дёсен.</div>
+          <div class="doctor-exp">Опыт работы более 5 лет</div>
+        </div>
+      </div>
+
+      <div class="doctor-card reveal">
+        <div class="doctor-photo"><svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 3c-2 0-4 2-4 5s2 5 4 5 4-2 4-5-2-5-4-5z"/><path d="M5 21c0-4 3-7 7-7s7 3 7 7"/></svg></div>
+        <div class="doctor-info">
+          <div class="doctor-name">Жандосова У.Ж.</div>
+          <div class="doctor-role">Стоматолог-ортодонт</div>
+          <div class="doctor-bio">Исправление прикуса у детей и взрослых: брекеты, элайнеры, пластинки.</div>
+          <div class="doctor-exp">Опыт работы более 6 лет</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Запишитесь к нашим<br>специалистам</h2>
+    <p>Наши врачи помогут решить любую стоматологическую проблему. Первая консультация — бесплатно.</p>
+    <a href="https://wa.me/77715249535" class="btn-white" target="_blank">Записаться через WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><span class="logo-text">MEGA <span>DENT</span></span><p>Семейная стоматология для детей и взрослых.</p><div class="footer-socials"><a href="#">IG</a><a href="https://wa.me/77715249535" target="_blank">WA</a></div></div>
+      <div class="footer-col"><h5>Услуги</h5><ul><li><a href="services.html">Лечение зубов</a></li><li><a href="services.html">Имплантация</a></li><li><a href="services.html">Ортодонтия</a></li></ul></div>
+      <div class="footer-col"><h5>Клиника</h5><ul><li><a href="about.html">О нас</a></li><li><a href="doctors.html">Врачи</a></li><li><a href="reviews.html">Отзывы</a></li></ul></div>
+      <div class="footer-col"><h5>Контакты</h5><ul><li><a href="tel:+77715249535">+7 (771) 524-95-35</a></li><li><a href="contacts.html">г. Алматы, ул. Жандосова 60А</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Mega Dent.</span><span>Сайт-пример дизайна</span></div>
+  </div>
+</footer>
+
+<script>
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 20); });
+function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => { entries.forEach((entry, i) => { if (entry.isIntersecting) { setTimeout(() => entry.target.classList.add('visible'), i * 80); observer.unobserve(entry.target); } }); }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
