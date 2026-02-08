@@ -732,8 +732,12 @@ section { padding: 120px 0; }
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: var(--radius);
-  overflow: hidden;
+  overflow: visible;
   transition: all 0.4s ease;
+}
+.doctor-card .doctor-photo {
+  overflow: hidden;
+  border-radius: var(--radius) var(--radius) 0 0;
 }
 .doctor-card:hover {
   background: rgba(255,255,255,0.1);
@@ -765,7 +769,7 @@ section { padding: 120px 0; }
 }
 .doctor-photo svg { width: 48px; height: 48px; opacity: 0.3; }
 
-.doctor-info { padding: 24px 20px; }
+.doctor-info { padding: 24px 20px 20px; }
 .doctor-name {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.2rem; font-weight: 600;
@@ -1456,18 +1460,20 @@ header.scrolled .lang-switch { background: rgba(26,58,92,0.06); }
 .svc-book-btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
   margin-top: 16px;
-  padding: 10px 20px;
-  background: var(--gold);
+  padding: 11px 22px;
+  background: var(--gold, #c5a265);
   color: #fff;
   border-radius: 8px;
   font-size: 0.85rem;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
-  font-family: var(--font-body);
+  font-family: var(--font-body, 'Raleway', sans-serif);
   letter-spacing: 0.02em;
+  width: 100%;
 }
 .svc-book-btn:hover {
   background: var(--navy);
@@ -1479,9 +1485,9 @@ header.scrolled .lang-switch { background: rgba(26,58,92,0.06); }
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  margin-top: 12px;
-  padding: 10px 20px;
-  background: var(--gold);
+  margin-top: 14px;
+  padding: 11px 22px;
+  background: var(--gold, #c5a265);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -1489,10 +1495,12 @@ header.scrolled .lang-switch { background: rgba(26,58,92,0.06); }
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-family: var(--font-body);
+  font-family: var(--font-body, 'Raleway', sans-serif);
   letter-spacing: 0.02em;
+  width: 100%;
+  justify-content: center;
 }
 .doc-book-btn:hover {
-  background: var(--navy);
+  background: var(--navy, #1a3a5c);
   transform: translateY(-1px);
 }
