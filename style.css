@@ -1420,3 +1420,79 @@ header.scrolled .lang-switch { background: rgba(26,58,92,0.06); }
   .lang-switch { margin-left: 4px; }
   .lang-btn { padding: 4px 8px; font-size: 0.7rem; }
 }
+
+/* ═══ ALWAYS VISIBLE BOOKING BUTTONS ═══ */
+.service-card .btn-book,
+.doctor-card .btn-book {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+  background: var(--gold, #c5a265);
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 12px;
+  opacity: 1 !important;
+  visibility: visible !important;
+  position: relative !important;
+  transform: none !important;
+}
+.service-card .btn-book:hover,
+.doctor-card .btn-book:hover {
+  background: var(--navy, #1a3a5c);
+}
+.service-card .btn-book {
+  margin-top: 10px;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+}
+
+/* ═══ Service Card Book Button (always visible) ═══ */
+.svc-book-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  padding: 10px 20px;
+  background: var(--gold);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: var(--font-body);
+  letter-spacing: 0.02em;
+}
+.svc-book-btn:hover {
+  background: var(--navy);
+  transform: translateY(-1px);
+}
+
+/* ═══ Doctor Card Book Button (always visible) ═══ */
+.doc-book-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: var(--gold);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--font-body);
+  letter-spacing: 0.02em;
+}
+.doc-book-btn:hover {
+  background: var(--navy);
+  transform: translateY(-1px);
+}
